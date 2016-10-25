@@ -4,8 +4,8 @@ import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent}      from './home/home.component';
 
 const appRoutes: Routes = [
-    {path: 'heroes', component: HomeComponent},
-    // {path: 'detail/:id', component: HeroDetailComponent},
+    {path: 'detail', component: HomeComponent},
+    {path: 'detail/:id', component: HomeComponent},
     {path: '', redirectTo: '/heroes', pathMatch: 'full'}
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

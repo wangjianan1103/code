@@ -11,14 +11,11 @@ import {Router, ActivatedRoute} from '@angular/router';
   `
 })
 export class HomeComponent implements OnInit{
-
     title = '啦啦啦啦啦啦';
     name: number;
-
     constructor(private router: Router,
                 private route: ActivatedRoute) {
     }
-
     ngOnInit(): void {
         let channel = this.route.snapshot.params['id'];
         this.name = channel;
